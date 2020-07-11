@@ -13,9 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 // REACT
 Route::view('/{path?}', 'app');
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> 7c0c25af03d99464130de7b740471b4a7bff4722
